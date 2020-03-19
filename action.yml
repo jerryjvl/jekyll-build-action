@@ -1,0 +1,8 @@
+name: 'Build Jekyll'
+description: 'Local pipeline build of Jekyll content; follow-on actions must publish it somewhere'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'book-open'
+  color: 'white'
