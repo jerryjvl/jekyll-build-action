@@ -15,7 +15,12 @@ chmod -R a+w /github/workspace
 # Build the Jekyll site
 ####################################################
 
-jekyll build --trace
+if [ "$1" = "true" ]
+then
+  jekyll build --trace --drafts
+else
+  jekyll build --trace
+fi
 
 ####################################################
 # Build completed

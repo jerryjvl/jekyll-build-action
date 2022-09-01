@@ -3,6 +3,12 @@ description: 'Local pipeline build of Jekyll content; follow-on actions must pub
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.drafts }}
+inputs:
+  drafts:
+    description: 'Whether to include draft posts in build (defaults to false)'
+    required: false
 branding:
   icon: 'book-open'
   color: 'white'
