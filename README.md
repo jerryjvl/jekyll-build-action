@@ -32,6 +32,19 @@ jobs:
         aws s3 sync ./_site/ s3://my-s3-bucket --delete
 ```
 
+# Parameters
+
+## Drafts
+
+Pass `true` to preview your site with drafts:
+
+```yaml
+- name: Build
+  uses: jerryjvl/jekyll-build-action@v1
+  with:
+    drafts: true
+```
+
 # References
 For more technical details on these steps and associated setup, see:
 - [actions/checkout](https://github.com/actions/checkout)
