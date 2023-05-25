@@ -21,4 +21,4 @@ jekyll build --trace
 # Build completed
 ####################################################
 
-echo "Completed Jekll build"
+echo "Completed Jekyll build"
